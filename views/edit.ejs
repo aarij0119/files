@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-full min-h-screen bg-zinc-900 px-6 py-5">
+        <div>
+            <form action="/edit" method="post">
+                <div class="w-1/2  text-white rounded overflow-hidden">
+                    <input type="text"  value="<%= filename %>" name="previousname"
+                        class="w-full bg-zinc-800 border-none focus:outline-none p-2">
+                </div>
+                <div class="mt-2 text-white rounded overflow-hidden">
+                    <textarea placeholder="New Name" name="newname" 
+                        class="w-1/2 bg-zinc-800 resize-none px-2 flex items-center pt-3 justify-center focus:outline-none"></textarea>
+                </div>
+                <div class="mt-2 text-white overflow-hidden">
+                    <input type="submit" value="Update" class="bg-yellow-600 px-3 py-1 rounded-md">
+                </div>
+            </form>
+        </div>       
+    </div>
+</body>
+
+</html>
